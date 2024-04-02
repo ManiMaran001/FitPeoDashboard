@@ -90,7 +90,7 @@ export const DashBoardSalesChart = styled.div`
     justify-content: center;
   }
   @media (max-width: 44em) {
-    grid-template-columns: 30rem;
+    grid-template-columns: 27rem;
     grid-template-rows: auto;
     gap: 8rem;
     justify-content: center;
