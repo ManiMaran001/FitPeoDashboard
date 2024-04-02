@@ -12,7 +12,7 @@ export const DashboardShowcaseContainer = styled.div`
     margin-bottom: 4rem;
   }
   @media (max-width: 44em) {
-    grid-template-columns: 37rem;
+    grid-template-columns: 30rem;
     justify-content: center;
     margin-bottom: 4rem;
   }
@@ -90,7 +90,7 @@ export const DashBoardSalesChart = styled.div`
     justify-content: center;
   }
   @media (max-width: 44em) {
-    grid-template-columns: 37rem;
+    grid-template-columns: 30rem;
     grid-template-rows: auto;
     gap: 8rem;
     justify-content: center;
