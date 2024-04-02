@@ -1,0 +1,65 @@
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.chart li {
+  position: relative;
+  display: flex;
+  height: 17rem;
+}
+.chart span {
+  margin: 0 1.5rem;
+  display: block;
+  align-self: flex-end;
+  width: 3rem;
+  border-radius: 1rem;
+  background: rgba(225, 190, 231,0.3)
+}
+.chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 1rem 1rem 0;
+  display: block;
+  text-align: center;
+  content: attr(title);
+  word-wrap: break-word;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.donut{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius:70%;
+  background: radial-gradient(var(--color-white) 40% ,transparent 40%),conic-gradient(#EC407A 0 40%,#3F51B5 0,60%, #B39DDB 0 100%);
+}
+.donut::before{
+  display: block;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.03);
+  width: 26rem;
+  padding-bottom: 26rem;
+  z-index: -2;
+}
+.textContainer{
+  text-align: center;
+}
