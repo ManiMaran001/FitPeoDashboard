@@ -12,14 +12,14 @@ const StyledAppLayout = styled.div`
   background-color: #f9f9f9;
   grid-template-columns:
     [sidebar-start]23rem[sidebar-end full-start] minmax(3rem, 1fr)
-    [center-start]repeat(12, [col-start] minmax(min-content, 16rem))
+    [center-start]repeat(12, [col-start] minmax(min-content, 14rem))
     [center-end] minmax(3rem, 1fr)
     [full-end];
   grid-template-rows: 10vh min-content;
   @media (max-width: 34em) {
     grid-template-columns:
       [full-start] minmax(3rem, 1fr)
-      [center-start]repeat(12, [col-start] minmax(min-content, 16rem))
+      [center-start]repeat(12, [col-start] minmax(min-content, 14rem))
       [center-end] minmax(3rem, 1fr)
       [full-end];
     grid-template-rows: min-content min-content;
@@ -27,11 +27,12 @@ const StyledAppLayout = styled.div`
   @media (min-width: 34em) and (max-width: 59em) {
     grid-template-columns:
       [full-start] minmax(3rem, 1fr)
-      [center-start]repeat(12, [col-start] minmax(min-content, 16rem))
+      [center-start]repeat(12, [col-start] minmax(min-content, 14rem))
       [center-end] minmax(3rem, 1fr)
       [full-end];
     grid-template-rows: min-content min-content;
   }
+  
 `;
 
 const StyledMain = styled.main`

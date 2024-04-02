@@ -12,7 +12,7 @@ export const DashboardShowcaseContainer = styled.div`
     margin-bottom: 4rem;
   }
   @media (max-width: 44em) {
-    grid-template-columns: 40rem;
+    grid-template-columns: 37rem;
     justify-content: center;
     margin-bottom: 4rem;
   }
@@ -90,7 +90,7 @@ export const DashBoardSalesChart = styled.div`
     justify-content: center;
   }
   @media (max-width: 44em) {
-    grid-template-columns: 50rem;
+    grid-template-columns: 37rem;
     grid-template-rows: auto;
     gap: 8rem;
     justify-content: center;
@@ -140,19 +140,11 @@ export const BarChartSelectField = styled.select`
 export const BarChart = styled.div`
   height: 40vh;
   @media (max-width: 34em) {
-    ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      background-color: #f5f5f5;
-    }
     height: 70vh;
     overflow-x: scroll;
   }
   @media (max-width: 44em) {
-    ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      background-color: #f5f5f5;
-    }
-    height: 50vh;
+    height: 30rem;
     overflow-x: scroll;
   }
   @media (min-width: 48em) and (max-width: 59em) {

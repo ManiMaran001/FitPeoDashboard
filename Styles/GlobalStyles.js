@@ -52,6 +52,7 @@ body{
   line-height: 1.5;
   font-size: 1.6rem;
   height:100%;
+  overflow-x: hidden;
   background-color:var(--color-white-400);
   width: 100%;
   color: var(--color-grey-700);
@@ -183,7 +184,17 @@ img{
   
 }
 
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #F5F5F5;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #7986CB;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
 
 
 
