@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import { RiDashboard2Line } from "react-icons/ri";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
@@ -72,8 +72,8 @@ function Sidebar({ handleMenu, routerData, menuOpen }) {
         <SidebarNavigationContainer>
           <SidebarMainContainer>
             {sidebarRoute?.map((val) => (
-              <>
-                <StyledListContainer key={val?.name}>
+              <React.Fragment key={val?.name}>
+                <StyledListContainer>
                   <StyledListIcon variation="menuicon">
                     {val?.icon}
                   </StyledListIcon>
@@ -82,7 +82,7 @@ function Sidebar({ handleMenu, routerData, menuOpen }) {
                     <MdOutlineKeyboardArrowRight />
                   </StyledListIcon>
                 </StyledListContainer>
-              </>
+              </React.Fragment>
             ))}
           </SidebarMainContainer>
         </SidebarNavigationContainer>

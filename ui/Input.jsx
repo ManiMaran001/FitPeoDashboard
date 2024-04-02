@@ -5,7 +5,7 @@ outline: none;
 border: none;
 min-width: 10rem;
 height: 100%;
-background-color:var(--color-grey-0);
+background: #fff;
 &:focus{
     outline: none;
 }

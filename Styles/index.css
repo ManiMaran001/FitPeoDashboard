@@ -34,6 +34,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin-top: 4rem;
 }
 
 .donut{
@@ -63,3 +64,42 @@
 .textContainer{
   text-align: center;
 }
+
+@media (max-width:44em){
+  .chart span {
+    margin: 0 1.4rem;
+    display: block;
+    align-self: flex-end;
+    width: 3rem;
+    border-radius: 1rem;
+    background: rgba(225, 190, 231,0.3);
+  }
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50rem;
+  }
+}
+
+@media (max-width:34em){
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:80rem;
+  }
+}
+  @media (max-width:44em){
+    .chart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 70rem;
+    }
+}
+
+
