@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const DashboardShowcaseContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: min-content min-content\;
+  grid-template-rows: min-content min-content;
   gap: 4rem;
 
   @media (max-width: 34em) {
@@ -166,4 +166,4 @@ export const TableContainer=styled.div`
   @media (max-width:50em){
     display: none;
   }
-`
+`;
