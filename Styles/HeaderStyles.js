@@ -41,7 +41,7 @@ export const BoxContainer = styled.div`
   display: flex;
   gap: 0.2rem;
   align-items: center;
-  background-color: #fff;
+   background-color: ${(props) => props.theme.main==="header"?"#fff":"var(--color-grey-0)"};
   padding: 0.3rem 0.4rem;
   border-radius: var(--border-radius-sm);
   @media (max-width: 34em) {

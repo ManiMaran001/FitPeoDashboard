@@ -13,8 +13,12 @@ import {
   StyledPriamrySpan,
   StyledPrimary,
   BarChart,
-  BarChartSelectField
+  BarChartSelectField,
+  TableContainer
 } from "../Styles/DashboardStyle";
+import { CiSearch } from "react-icons/ci";
+import { BoxContainer,StyledIcon } from "../Styles/HeaderStyles";
+import { Input } from "../ui/Input";
 
 function Dashboard() {
   return (
@@ -100,6 +104,44 @@ function Dashboard() {
           </div>
         </DashboardPieChart>
       </DashBoardSalesChart>
+      <div className="test1">
+      <TableContainer>
+        <div className="tableHeader">
+        <StyledPrimary variant="secondaryflex">
+          Product Sell
+        </StyledPrimary>
+        <div className="tableMini chart1">
+        <BoxContainer  theme={{ main: `dashboard` }}>
+          <StyledIcon>
+            <CiSearch />
+          </StyledIcon>
+          <Input type="name" placeholder="Search" />
+        </BoxContainer>
+        <BarChartSelectField type="text">
+              <option value="Quartely">Quartely</option>
+        </BarChartSelectField>
+        </div>
+        </div>
+        <div className="tableHeader">
+        <StyledPrimary variant="primaryTag">
+          Product Name
+        </StyledPrimary>
+        <div className="tableMini chart">
+        <StyledPrimary variant="primaryTag">
+          Stock
+        </StyledPrimary>
+        <StyledPrimary variant="primaryTag">
+          Price
+        </StyledPrimary>
+        <StyledPrimary variant="primaryTag">
+          Total Price
+        </StyledPrimary>
+        </div>
+        </div>
+      </TableContainer>
+        </div>
+
+
     </>
   );
 }

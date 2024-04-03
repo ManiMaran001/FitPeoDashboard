@@ -19,7 +19,7 @@ function Header({ handleMenu }) {
           <IoMdMenu onClick={() => handleMenu(true)} />
         </StyledMenu>
         <StyledParaText>Hello Shahrukh 👋,</StyledParaText>
-        <BoxContainer>
+        <BoxContainer theme={{ main: `header` }}>
           <StyledIcon>
             <CiSearch />
           </StyledIcon>

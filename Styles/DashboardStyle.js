@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const DashboardShowcaseContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: min-content min-content;
+  grid-template-rows: min-content min-content\;
   gap: 4rem;
 
   @media (max-width: 34em) {
@@ -52,6 +52,12 @@ export const variations = {
   primaryTag: css`
     font-size: 1rem;
     color: var(--color-grey-500);
+  `,
+  secondaryflex:css`
+  flex:1;
+  font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-black);
   `,
   secondaryTag: css`
     font-weight: 600;
@@ -151,3 +157,13 @@ export const BarChart = styled.div`
     height: 70vh;
   }
 `;
+export const TableContainer=styled.div`
+  margin-top:4rem;
+  max-width :140rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  max-height:100%;
+  @media (max-width:50em){
+    display: none;
+  }
+`

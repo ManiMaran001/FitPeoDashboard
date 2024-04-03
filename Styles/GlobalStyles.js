@@ -197,6 +197,25 @@ img{
 }
 
 
+.tableHeader{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.tableHeader.chart{
+  gap:6rem;
+}
+.tableHeader.chart1{
+  gap:1rem;
+}
+
+.tableMini{
+  display:flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
 
 `
 export default GlobalStyles;

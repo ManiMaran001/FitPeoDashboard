@@ -15,7 +15,7 @@ const StyledAppLayout = styled.div`
     [center-start]repeat(12, [col-start] minmax(min-content, 14rem))
     [center-end] minmax(3rem, 1fr)
     [full-end];
-  grid-template-rows: 10vh min-content;
+  grid-template-rows: 10vh min-content min-content;
   @media (max-width: 34em) {
     grid-template-columns:
       [full-start] minmax(3rem, 1fr)
